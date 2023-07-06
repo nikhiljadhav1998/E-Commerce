@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="logincss.css">
+
+    <script>
+        
+        function logindeta(){
+            var id = document.getElementById("userId");
+            var pass= document.getElementById("userPass");
+
+            var a= true;
+
+            if(a==true) {
+                alert()
+                location.replace("http://127.0.0.1:5500/Welcome.html?remember=on");
+                
+            }else{
+                alert("Please enter right User Name and Password");
+                
+            }
+         
+          
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <dev>
+
+        <form class="login"  >
+
+            <H3>Login </H3>
+
+            <p id="userId">User Name <br>
+                <Input title="Please Enter User Name" type="Text" id="user" placeholder="Enter User Name" required></Input>
+            </p>
+            <p id="userPass"> Password <br>
+                <Input title="Please Enter Password" type="password" id="user" placeholder="Enter password"
+                    required></Input>
+            </p>
+
+            <div class="subcontainer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+
+            <p>
+                <input id="button" type="button" value="Sign In" onclick="logindeta()">
+            </p>
+            
+
+
+
+            <p class="register">Not a member? <a href="#">Register here!</a></p>
+
+        </form>
+    </dev>
+</body>
+
+</html>
